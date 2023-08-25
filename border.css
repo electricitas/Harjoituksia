@@ -7,3 +7,6 @@ table {
 table {
     text-align: justify;
 }
+td{
+    width: 200px;
+}
