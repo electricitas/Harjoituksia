@@ -92,3 +92,39 @@ lisaaHenkilo("Matti", "Meikäläinen", "Esimerkkikatu 123", "00100", "Helsinki", "
 lisaaHenkilo("Anna", "Ankka", "Ankkalinnantie 456", "00220", "Ankkalinna", "0509876543", "anna@example.com");
 lisaaHenkilo("Timo", "Testaaja", "Testikatu 789", "00330", "Testilinn", "0451112233", "timo@example.com");
 console.log(osoitekirja);
+
+function tulostaAakkosjarjestyksessa(sana) {
+    const merkit = Array.from(sana);
+    const jarjestettyTaulukko = merkit.sort();
+    const jarjestettySana = jarjestettyTaulukko.join('');
+    console.log(jarjestettySana);
+}
+
+tulostaAakkosjarjestyksessa("webmaster");
+
+function koeArvostelu(nimi, pisteet) {
+    let arvosana;
+
+    if (pisteet < 50) {
+        arvosana = "Hylätty";
+    } else if (pisteet < 60) {
+        arvosana = "T1";
+    } else if (pisteet < 70) {
+        arvosana = "T2";
+    } else if (pisteet < 80) {
+        arvosana = "H3";
+    } else if (pisteet < 90) {
+        arvosana = "H4";
+    } else if (pisteet <= 100) {
+        arvosana = "K5";
+    } else {
+        arvosana = "Tuntematon arvosana";
+    }
+
+    console.log(`${nimi} sai kokeesta ${pisteet} pistettä --> ${nimi} ${arvosana}`);
+}
+koeArvostelu("Daniel", 80);
+koeArvostelu("Viivi", 77);
+koeArvostelu("Tiina", 88);
+koeArvostelu("Ismael", 95);
+koeArvostelu("Tuomas", 68);
