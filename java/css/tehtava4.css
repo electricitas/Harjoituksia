@@ -1,0 +1,22 @@
+﻿.article {
+    background-color: darkslateblue;
+    padding: 20px;
+}
+.container {
+    background-color: darkslateblue;
+    width: 30%
+}
+    h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
