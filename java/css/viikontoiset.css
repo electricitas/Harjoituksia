@@ -1,0 +1,30 @@
+﻿#eka {
+    background-color: lightblue;
+    width: 20%;
+}
+#toka {
+    background-color: orangered;
+    width: 20%;
+}
+#kolmas {
+    background-color: seagreen;
+    width: 20%;
+}
+.container {
+    background-color: lightblue;
+    width: 20%
+}
+    h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
