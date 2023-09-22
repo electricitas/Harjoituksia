@@ -10,9 +10,13 @@
     background-color: seagreen;
     width: 20%;
 }
-.container {
-    background-color: lightblue;
-    width: 20%
+#neljäs {
+    background-color: red;
+    width: 20%;
+}
+#viides {
+    background-color: cornflowerblue;
+    width: 20%;
 }
     h1 {
     font-size: 24px;
