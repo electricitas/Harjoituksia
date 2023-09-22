@@ -1,0 +1,43 @@
+﻿<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Viikon toiset</title>
+    <link rel="stylesheet" href="css/viikontoiset.css">
+    <script type="text/javascript" src="viikontoiset.js">
+
+    </script>
+</head>
+<body>
+    <article class='posneg' id="eka">
+
+        <h1>Tarkista onko luku positiivinen vai negatiivinen</h1>
+
+        <label>Syötä luku: </label>
+        <input type="text" id="lukuInput">
+        <button onclick="tarkistaLuku()">Tarkista</button>
+
+        <p id="tulos"></p>
+
+    </article>
+
+    <article class="päiviä" id="toka">
+        <h1>Päivän tarkistus</h1>
+
+        <label>Syötä päivän numero (1-7):</label>
+        <input type="number" id="paivanNumero">
+        <button onclick="tarkistaPaiva()">Tarkista päivä</button>
+
+        <p id="vastaus"></p>
+    </article>
+
+    <article class="vuosi" id="kolmas">
+        <h1>Vuoden tarkastus</h1>
+        <label>Syötä vuosiluku:</label>
+        <input type="number" id="vuosilukuInput">
+        <button onclick="tarkistaKarkausvuosi()">Tarkista</button>
+
+        <p id="karkausvuosiTulos"></p>
+    </article>
+
+</body>
+</html>
