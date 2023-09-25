@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Toisen viikon ekat</title>
+    <link rel="stylesheet" href="css/toisenviikon.css">
+    <script type="text/javascript" src="toisenviikon.js">
+
+    </script>
+</head>
+<body>
+    <article class='parilliset' id="eka">
+
+        <h1>Parilliset Luvut</h1>
+
+        <p>Syötä parillinen luku:</p>
+        <input type="number" id="parillinenLuku">
+        <button onclick="tulostaParilliset()">Tulosta</button>
+
+        <h2>Tulokset:</h2>
+        <p id="tulokset"></p>
+
+    </article>
+
+    <article class="salasana" id="toka">
+        <p>Syötä sana:</p>
+        <input type="text" id="sana">
+        <button onclick="muunnaSalasanaksi()">Muunna</button>
+
+        <h2>Salasana:</h2>
+        <p id="salasana"></p>
+    </article>
+
+    <article class="ö-kirjain" id="kolmas">
+        <h1>Ö-Kirjaimen Tarkastus</h1>
+
+        <p>Syötä sana:</p>
+        <input type="text" id="sanat">
+        <button onclick="tarkastaKirjain()">Tarkasta</button>
+
+        <h2>Vastaus:</h2>
+        <p id="vastaus"></p>
+    </article>
+    <article class="kertoma" id="neljäs">
+        <h1>Kertoma laskuri</h1>
+
+        <p>Syötä luku:</p>
+        <input type="number" id="luku">
+        <button onclick="laskeKertoma()">Laske kertoma</button>
+
+        <h2>Kertoma:</h2>
+        <p id="kertoma"></p>
+    </article>
+
+    <article class="muuttujaan" id="viides">
+        <h1>Kertotaulu</h1>
+
+        <label>Syötä luku:</label>
+        <input type="text" id="luku">
+        <button onclick="laskeKertotaulu()">Laske</button>
+
+        <p id="lause"></p>
+    </article>
+</body>
+</html>
