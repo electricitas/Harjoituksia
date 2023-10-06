@@ -74,3 +74,139 @@ function metrit(metri) {
 
 metrit(74);
 
+
+function convertToASCII(inputStr) {
+    for (let i = 0; i < inputStr.length; i++) {
+        let ascii = inputStr.charCodeAt(i);
+        console.log(ascii);
+    }
+}
+
+convertToASCII("ASCII");
+
+function ympyranAla(sade) {
+    console.log(sade * sade * Math.PI);
+}
+ympyranAla(2);
+
+function nelioAla(sivu) {
+    console.log(sivu * sivu);
+}
+nelioAla(5);
+
+function suoraAla(sivu1, sivu2) {
+    console.log(sivu1 * sivu2);
+}
+suoraAla(4, 3);
+
+function muutaVuosiksi(paivat) {
+    let vuodet = parseInt(paivat / 365);
+    let kuukaudet = parseInt((paivat % 365) / (365 / 12));
+    let paiva = parseInt((paivat % 365) - kuukaudet * (365 / 12));
+    console.log(paivat + " paivaa on " + vuodet + " vuotta " + kuukaudet + " kuukautta on " + paiva + " paivaa.");
+}
+muutaVuosiksi(12410);
+
+function suurempi(a, b) {
+    if (a > b) {
+        console.log("suurempi luku on " + a);
+    }
+    else if (b > a) {
+        console.log("suurempi luku on " + b);
+    }
+}
+suurempi(5, 3);
+//suurempi (2, 7); tässä tapauksessa b olisi suurempi luku.
+
+function suurinNumero(a, b, c) {
+    if (a > b && a > c) {
+        console.log("suurin luku on " + a);
+    }
+    else if (b > c) {
+        console.log("suurin luku on " + b);
+    }
+    else {
+        console.log("suurin luku on " + c);
+    }
+}
+suurinNumero(4, 8, 2);
+//suurinNumero (9, 1, 7); tässä suurin olisi a
+//suurinNumero (3, 7, 12); tässä suurin olisi c
+
+function luvunTarkistus(luku) {
+    if (luku < 0) {
+        console.log("luku on negatiivinen");
+    }
+    else if (luku == 0) {
+        console.log("luku on nolla");
+    }
+    else {
+        console.log("luku on positiivinen");
+    }
+}
+luvunTarkistus(0);
+//luvunTarkistus(-3); tulostuu negatiivinen
+//luvunTarkistus(75); tulostuu luku on positiivinen
+
+function jaollinen(luku) {
+    if (luku % 5 == 0 || luku % 11 == 0) {
+        console.log("luku on jaollinen 5:lla tai 11:sta");
+    }
+    else {
+        console.log("luku ei ole jaollinen 5:lla tai 11:sta");
+    }
+}
+jaollinen(44);
+//jaollinen(61); ei ole jaollinen
+
+function tarkistaKarkausvuosi(vuosiluku) {
+    if ((vuosiluku % 4 === 0 && vuosiluku % 100 !== 0) || vuosiluku % 400 === 0) {
+        console.log("Vuosi on karkausvuosi.");
+    } else {
+        console.log("Vuosi ei ole karkausvuosi.");
+    }
+}
+
+tarkistaKarkausvuosi(2004);
+//tarkistaKarkausvuosi(2023); ei ole karkausvuosi
+
+function parillinen(luku) {
+    if (luku % 2 == 0) {
+        console.log("luku on parillinen");
+    }
+    else {
+        console.log("luku on pariton");
+    }
+}
+
+parillinen(6);
+//parillinen(5); on pariton.
+
+function onkoKirjain(merkki) {
+    var kirjaimet = /^[A-Za-z]+$/;
+
+    if (kirjaimet.test(merkki)) {
+        console.log("'" + merkki + "' on kirjain.");
+    } else {
+        console.log("'" + merkki + "' ei ole kirjain.");
+    }
+}
+
+onkoKirjain('A');
+//onkoKirjain('1'); ei ole kirjain
+
+function vokaaliKonsonantti(merkki) {
+    if (merkki.match(/[aeiouyäö]/i)) {
+        console.log("annettu merkki on vokaali");
+    }
+    else if (merkki.match(/[bcdfghjklmnpqrstvwxz]/i)) {
+        console.log("annettu merkki on konsonantti");
+    }
+    else {
+        console.log("annettu merkki ei ole kumpikaan.");
+    }
+}
+
+vokaaliKonsonantti("e");
+//vokaaliKonsonantti("f"); = konsonantti
+//vokaaliKonsonantti("2"); = ei ole kumpikaan
