@@ -210,3 +210,89 @@ function vokaaliKonsonantti(merkki) {
 vokaaliKonsonantti("e");
 //vokaaliKonsonantti("f"); = konsonantti
 //vokaaliKonsonantti("2"); = ei ole kumpikaan
+
+function kirjainNumeroErikoismerkki(merkki) {
+    let kirjain = /[a-öA-Ö]/i;
+    let numero = /[0-9]/i;
+
+    if (merkki.length > 0 && merkki.match(kirjain)) {
+        console.log("merkki on kirjain");
+    } else if (merkki.match(numero)) {
+        console.log("merkki on numero");
+    } else {
+        console.log("merkki on erikoismerkki");
+    }
+}
+
+kirjainNumeroErikoismerkki("H");
+//kirjainNumeroErikoismerkki("4"); = merkki on numero
+//kirjainNumeroErikoismerkki("&"); = merkki on erikoismerkki
+
+function tarkastaKirjain(kirjain) {
+    if (kirjain.match(/[A-Z]/)) {
+        console.log("" + kirjain + " on iso kirjain.");
+    } else if (kirjain.match(/[a-z]/)) {
+        console.log("" + kirjain + " on pieni kirjain.");
+    } else {
+        console.log("" + kirjain + " ei ole kirjain.");
+    }
+}
+
+tarkastaKirjain("f");
+//tarkastaKirjain("G"); = on iso kirjain
+//tarkastaKirjain("!"); = ei ole kirjain
+
+function laskeVoittoTaiTappio(myyntiStr, ostotStr) {
+    var myynti = parseInt(myyntiStr, 10);
+    var ostot = parseInt(ostotStr, 10);
+
+    if (isNaN(myynti) || isNaN(ostot)) {
+        console.log("Virheelliset syötteet, anna kokonaislukuja.");
+        return;
+    }
+
+    var voitto = myynti - ostot;
+
+    if (voitto > 0) {
+        console.log("Sait voittoa " + voitto + " euroa.");
+    } else if (voitto < 0) {
+        console.log("Teit tappiota " + Math.abs(voitto) + " euroa.");
+    } else {
+        console.log("Ei voittoa eikä tappiota.");
+    }
+}
+
+laskeVoittoTaiTappio("500", "400");
+//laskeVoittoTaiTappio("300", "500"); teit tappiota 200 euroa
+//laskeVoittoTaiTappio("400", "400"); Ei voittoa eikä tappiota
+
+
+
+function paiva(paivanNumero) {
+    switch (paivanNumero) {
+        case 1:
+            return "Maanantai";
+            break;
+        case 2:
+            return "Tiistai";
+            break;
+        case 3:
+            return "Keskiviikko";
+            break;
+        case 4:
+            return "Torstai";
+            break;
+        case 5:
+            return "Perjantai";
+            break;
+        case 6:
+            return "Lauantai";
+            break;
+        case 7:
+            return "Sunnuntai";
+            break;
+        default:
+            return "Et antanut arvoa välillä 1-7";
+    }
+}
+console.log(paiva(1));
