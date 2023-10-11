@@ -266,7 +266,31 @@ laskeVoittoTaiTappio("500", "400");
 //laskeVoittoTaiTappio("300", "500"); teit tappiota 200 euroa
 //laskeVoittoTaiTappio("400", "400"); Ei voittoa eikä tappiota
 
-
+function koePisteet(Ma, KeFy, Ai, Ru, En) {
+    var taulukko = [["Matematiikka", Ma], ["KemiaFysiikka", KeFy], ["Aidinkieli", Ai], ["Ruotsi", Ru], ["Englanti", En]];
+    for (var i = 0; i < taulukko.length; i++) {
+        if (taulukko[i][1] >= 90) {
+            console.log(taulukko[i][0] + ": K5");
+        }
+        else if (taulukko[i][1] >= 80) {
+            console.log(taulukko[i][0] + ": H4");
+        }
+        else if (taulukko[i][1] >= 70) {
+            console.log(taulukko[i][0] + ": H3");
+        }
+        else if (taulukko[i][1] >= 60) {
+            console.log(taulukko[i][0] + ": T2");
+        }
+        else if (taulukko[i][1] >= 50) {
+            console.log(taulukko[i][0] + ": T1");
+        }
+        else {
+            console.log(taulukko[i][0] + ": Hylätty");
+        }
+    }
+}
+koePisteet(59, 76, 68, 81, 97);
+//koePisteet(99, 41, 72, 86, 61); K5, hylätty, H3, H4, T2
 
 function paiva(paivanNumero) {
     switch (paivanNumero) {
@@ -296,3 +320,167 @@ function paiva(paivanNumero) {
     }
 }
 console.log(paiva(1));
+
+function tarkastaKokonaisluvut(a, b) {
+    if (!Number.isInteger(a) || !Number.isInteger(b)) {
+        return "Et antanut kokonaislukuja";
+    }
+    if (a === b) {
+        return "Antamasi luvut ovat samat.";
+    } else {
+        return "Antamasi luvut eivät ole samat.";
+    }
+}
+
+console.log(tarkastaKokonaisluvut(3, 3));
+//console.log(tarkastaKokonaisluvut(5,7)); Antamasi luvut eivät ole samat.
+
+function tarkistaAanestysoikeus(ika) {
+    if (ika >= 18) {
+        return "Sinulla on äänestysoikeus.";
+    } else {
+        return "Sinulla ei ole äänestysoikeutta.";
+    }
+}
+
+var ika = parseInt("20");
+// var ika = parseInt("15"); = sinulla ei ole äänestysoikeutta.
+if (!isNaN(ika)) {
+    var tulos = tarkistaAanestysoikeus(ika);
+    if (tulos === "Sinulla on äänestysoikeus.") {
+        console.log(tulos);
+    } else {
+        console.log("Sinulla ei ole äänestysoikeutta.");
+    }
+} else {
+    console.log("Syöte ei ole kelvollinen ikä.");
+}
+
+function laskeKuukaudenPaivat(kuukausi) {
+    switch (kuukausi) {
+        case 1:
+            console.log("Tammikuussa on 31 päivää.");
+            break;
+        case 2:
+            console.log("Helmikuussa on 28 tai 29 päivää riippuen vuodesta.");
+            break;
+        case 3:
+            console.log("Maaliskuussa on 31 päivää.");
+            break;
+        case 4:
+            console.log("Huhtikuussa on 30 päivää.");
+            break;
+        case 5:
+            console.log("Toukokuussa on 31 päivää.");
+            break;
+        case 6:
+            console.log("Kesäkuussa on 30 päivää.");
+            break;
+        case 7:
+            console.log("Heinäkuussa on 31 päivää.");
+            break;
+        case 8:
+            console.log("Elokuussa on 31 päivää.");
+            break;
+        case 9:
+            console.log("Syyskuussa on 30 päivää.");
+            break;
+        case 10:
+            console.log("Lokakuussa on 31 päivää.");
+            break;
+        case 11:
+            console.log("Marraskuussa on 30 päivää.");
+            break;
+        case 12:
+            console.log("Joulukuussa on 31 päivää.");
+            break;
+        default:
+            console.log("Antamasi kuukauden numero ei ole kelvollinen.");
+            break;
+    }
+}
+
+var kuukausi = parseInt("2");
+
+if (!isNaN(kuukausi) && kuukausi >= 1 && kuukausi <= 12) {
+    laskeKuukaudenPaivat(kuukausi);
+} else {
+    console.log("Antamasi kuukauden numero ei ole kelvollinen.");
+}
+
+function muunnaRahaksi(summa) {
+    var setelitJaKolikot = [500, 100, 50, 20, 10, 5, 2, 1];
+    var rahat = {};
+
+    for (var i = 0; i < setelitJaKolikot.length; i++) {
+        var arvo = setelitJaKolikot[i];
+        var lukumaara = Math.floor(summa / arvo);
+
+        if (lukumaara > 0) {
+            rahat[arvo] = lukumaara;
+            summa -= arvo * lukumaara;
+        }
+    }
+
+    return rahat;
+}
+
+var summa = parseInt("3789");
+
+if (!isNaN(summa) && summa >= 0) {
+    var rahat = muunnaRahaksi(summa);
+    console.log("Rahojen määrä:");
+    for (var seteli in rahat) {
+        console.log(seteli + " = " + rahat[seteli]);
+    }
+} else {
+    console.log("Syöte ei ole kelvollinen rahamäärä.");
+}
+
+function laskeLainanTakaisinmaksu(laina, korko, vuodet) {
+    var korkoDesimaali = korko / 100;
+    var korkojenMaara = laina * korkoDesimaali;
+    var takaisinmaksu = laina + korkojenMaara * vuodet;
+
+    return takaisinmaksu;
+}
+
+var lainaSumma = 5000;
+var korkoProsentti = 2;
+var lainaAikaVuodet = 2;
+
+var takaisinmaksuSumma = laskeLainanTakaisinmaksu(lainaSumma, korkoProsentti, lainaAikaVuodet);
+
+console.log("Sinun tulee maksaa takaisin yhteensä " + takaisinmaksuSumma + " euroa.");
+
+
+function kertoma(luku) {
+    let kertoma = 1;
+    for (var i = 1; i <= luku; i++) {
+        kertoma *= i;
+    }
+    console.log("Luvun " + luku + "kertoma on: " + kertoma);
+}
+kertoma(5);
+
+
+function esiintyma() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3];
+    for (var i = 0; i < taulukko.length; i++) {
+        if (taulukko[i] == 3) {
+            console.log("Nro 3 on taulukon " + i + ". jäsen");
+            i = taulukko.length;
+        }
+    }
+}
+esiintyma();  
+
+
+function kaannaSana(sana) {
+    var kaannettySana = "";
+    for (var i = sana.length - 1; i >= 0; i--) {
+        kaannettySana += sana[i];
+    }
+    console.log(kaannettySana);
+}
+kaannaSana("Hevonen");
