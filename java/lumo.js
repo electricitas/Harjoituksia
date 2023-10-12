@@ -484,3 +484,122 @@ function kaannaSana(sana) {
     console.log(kaannettySana);
 }
 kaannaSana("Hevonen");
+
+
+function suurinArvo() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1];
+    let suurinArvo = taulukko[0];
+    for (var i = 1; i < taulukko.length; i++) {
+        if (taulukko[i] > suurinArvo) {
+          suurinArvo = taulukko[i];
+        }
+    }
+    console.log("Suurin arvo taulukossa [" + taulukko + "] on: " + suurinArvo);
+    }
+    suurinArvo();
+
+
+function laskeKeskiarvo(taulukko) {
+    if (taulukko.length === 0) {
+        return 0;
+    }
+
+    var summa = 0;
+    for (var i = 0; i < taulukko.length; i++) {
+        summa += taulukko[i];
+    }
+
+    var keskiarvo = summa / taulukko.length;
+    return keskiarvo;
+}
+
+var taulukko = [6, 7, 2, 4, 3, 8, 1];
+var keskiarvo = laskeKeskiarvo(taulukko);
+console.log("Taulukon keskiarvo on: " + keskiarvo);
+
+
+function isojaKirjaimia(taulukko) {
+    var isoTaulukko = [];
+
+    for (var i = 0; i < taulukko.length; i++) {
+        var isoKirjain = taulukko[i].toUpperCase();
+        isoTaulukko.push(isoKirjain);
+    }
+
+    return isoTaulukko;
+}
+
+var alkuperainenTaulukko = ["a", "b", "c", "d", "e", "f"];
+var isoTaulukko = isojaKirjaimia(alkuperainenTaulukko);
+console.log("Isoilla kirjaimilla: " + isoTaulukko);
+
+
+function etsiSeitsemasPariton(taulukko) {
+    var parittomienLaskuri = 0;
+
+    for (var i = 0; i < taulukko.length; i++) {
+        if (taulukko[i] % 2 !== 0) {
+            parittomienLaskuri++;
+            if (parittomienLaskuri === 7) {
+                return taulukko[i];
+            }
+        }
+    }
+    return undefined;
+}
+
+var taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3];
+var seitsemasPariton = etsiSeitsemasPariton(taulukko);
+if (seitsemasPariton !== undefined) {
+    console.log("Seitsemäs pariton taulukossa [" + taulukko + "] on: " + seitsemasPariton);
+} else {
+    console.log("Taulukossa ei ole seitsemättä paritonta lukua.");
+}
+
+
+function toiseksiSuurinArvo() {
+    let taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3];
+    let suurinArvo = taulukko[0];
+    let toiseksiSuurinArvo = taulukko[0];
+
+    for (var i = 1; i < taulukko.length; i++) {
+        if (taulukko[i] > suurinArvo) {
+            toiseksiSuurinArvo = suurinArvo;
+            suurinArvo = taulukko[i];
+        } else if (taulukko[i] > toiseksiSuurinArvo && taulukko[i] !== suurinArvo) {
+            toiseksiSuurinArvo = taulukko[i];
+        }
+    }
+
+    console.log("Taulukon [" + taulukko + "] toiseksi suurin on: " + toiseksiSuurinArvo);
+}
+
+toiseksiSuurinArvo();
+
+
+for (var i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("Viisitoista");
+    } else if (i % 3 === 0) {
+        console.log("Kolme");
+    } else if (i % 5 === 0) {
+        console.log("Viisi");
+    } else {
+        console.log(i);
+    }
+}      
+
+
+function printFibonacci(n) {
+    let a = 0, b = 1, c;
+    console.log(a);
+    console.log(b);
+    for (let i = 2; i < n; i++) {
+        c = a + b;
+        console.log(c);
+        a = b;
+        b = c;
+    }
+}
+
+printFibonacci(10);
