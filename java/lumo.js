@@ -603,3 +603,150 @@ function printFibonacci(n) {
 }
 
 printFibonacci(10);
+
+
+class Henkilo {
+    constructor(etunimi, sukunimi, ika) {
+        this.etunimi = etunimi;
+        this.sukunimi = sukunimi;
+        this.ika = ika;
+    }
+
+    NaytaTiedot() {
+        console.log("Etunimi: " + this.etunimi);
+        console.log("Sukunimi: " + this.sukunimi);
+        console.log("Ika: " + this.ika);
+    }
+}
+
+const risto = new Henkilo("Risto", "Reipas", 10);
+risto.sukunimi = "Reippaampi";
+risto.ika = 11;
+
+risto.NaytaTiedot();
+
+
+class Kuvakirja {
+    constructor(sivujenLukumaara = 16) {
+        this.sivujenLukumaara = sivujenLukumaara;
+    }
+
+    NaytaSivumaara() {
+        console.log("Kuvakirjassa on " + this.sivujenLukumaara + " sivua.");
+    }
+}
+
+const kirja1 = new Kuvakirja();
+const kirja2 = new Kuvakirja(24);
+
+kirja1.NaytaSivumaara();
+kirja2.NaytaSivumaara();
+
+class Elain {
+    constructor(nimi = "Nimeton") {
+        this._nimi = nimi;
+    }
+
+    get nimi() {
+        return this._nimi;
+    }
+
+    set nimi(uusiNimi) {
+        this._nimi = uusiNimi;
+    }
+
+    Syo() {
+        console.log(this.nimi + " syo - mumm mumm mumm");
+    }
+}
+
+const kana = new Elain();
+console.log(kana.nimi);
+kana.nimi = "kaakattaja";
+console.log("Kanan uusi nimi: " + kana.nimi);
+kana.Syo();
+
+class Koira extends Elain {
+    constructor(nimi, tassut = 4, turkki = "musta") {
+        super(nimi);
+        this._tassut = tassut;
+        this._turkki = turkki;
+    }
+
+    get tassut() {
+        return this._tassut;
+    }
+
+    set tassut(maara) {
+        this._tassut = maara;
+    }
+
+    get turkki() {
+        return this._turkki;
+    }
+
+    set turkki(vari) {
+        this._turkki = vari;
+    }
+
+    Aantelehtii(aani) {
+        console.log(this.nimi + " " + aani);
+    }
+}
+
+const koira = new Koira("Lissu");
+console.log(koira.nimi);
+console.log(koira.tassut);
+console.log(koira.turkki);
+koira.Aantelehtii("haukkuu");
+
+
+class Ajoneuvo {
+    constructor(merkki, malli, vuosimalli) {
+        this._merkki = merkki;
+        this._malli = malli;
+        this._vuosimalli = vuosimalli;
+    }
+    get merkki() {
+        return this._merkki;
+    }
+    set merkki(uusiMerkki) {
+        this._merkki = uusiMerkki;
+    }
+    get malli() {
+        return this._malli;
+    }
+    set malli(uusiMalli) {
+        this._malli = uusiMalli;
+    }
+    get vuosimalli() {
+        return this._vuosimalli;
+    }
+    set vuosimalli(uusiVuosimalli) {
+        this._vuosimalli = uusiVuosimalli;
+    }
+    ajo() {
+        console.log("Auton ajo: " + this._merkki + this._malli);
+    }
+    kiihdytys() {
+        console.log("Kiihdytetaan auton: " + this._merkki + this._malli);
+    }
+    jarrutus() {
+        console.log("Jarrutetaan: " + this._merkki + this._malli);
+    }
+    kaynnistys() {
+        console.log("Kaynnistaa auton: " + this._merkki + this._malli);
+    }
+    sammutus() {
+        console.log("Sammuttaa auton: " + this._merkki + this._malli);
+    }
+}
+class Auto extends Ajoneuvo {
+}
+class TestiAjo {
+    constructor() {
+        const mese = new Auto("Mercedes-Benz", "Sarja S", 2023);
+        mese.ajo();
+    }
+}
+const testiAjo = new TestiAjo();
