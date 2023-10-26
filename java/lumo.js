@@ -726,6 +726,57 @@ class Ajoneuvo {
         this._vuosimalli = uusiVuosimalli;
     }
     ajo() {
+        console.log("Auton ajo: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    kiihdytys() {
+        console.log("Kiihdytetaan auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    jarrutus() {
+        console.log("Jarrutetaan: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    kaynnistys() {
+        console.log("Kaynnistaa auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    sammutus() {
+        console.log("Sammuttaa auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+}
+class Auto extends Ajoneuvo {
+}
+class TestiAjo {
+    constructor() {
+        const mese = new Auto("Mercedes-Benz ", "Sarja S ", 2020);
+        mese.ajo();
+    }
+}
+const testiAjo = new TestiAjo();
+
+
+class Ajoneuvoo {
+    constructor(merkki, malli, vuosimalli, pyorat) {
+        this._merkki = merkki;
+        this._malli = malli;
+        this._vuosimalli = vuosimalli;
+    }
+    get merkki() {
+        return this._merkki;
+    }
+    set merkki(uusiMerkki) {
+        this._merkki = uusiMerkki;
+    }
+    get malli() {
+        return this._malli;
+    }
+    set malli(uusiMalli) {
+        this._malli = uusiMalli;
+    }
+    get vuosimalli() {
+        return this._vuosimalli;
+    }
+    set vuosimalli(uusiVuosimalli) {
+        this._vuosimalli = uusiVuosimalli;
+    }
+    aajo() {
         console.log("Auton ajo: " + this._merkki + this._malli);
     }
     kiihdytys() {
@@ -741,12 +792,166 @@ class Ajoneuvo {
         console.log("Sammuttaa auton: " + this._merkki + this._malli);
     }
 }
-class Auto extends Ajoneuvo {
-}
-class TestiAjo {
-    constructor() {
-        const mese = new Auto("Mercedes-Benz", "Sarja S", 2023);
-        mese.ajo();
+class Autoo extends Ajoneuvoo {
+    constructor(merkki, malli, vuosimalli) {
+        super(merkki, malli, vuosimalli);
+        this._pyorat = 4;
+    }
+    get merkki() {
+        return this._merkki;
+    }
+    set merkki(uusiMerkki) {
+        this._merkki = uusiMerkki;
+    }
+    get malli() {
+        return this._malli;
+    }
+    set malli(uusiMalli) {
+        this._malli = uusiMalli;
+    }
+    get vuosimalli() {
+        return this._vuosimalli;
+    }
+    set vuosimalli(uusiVuosimalli) {
+        this._vuosimalli = uusiVuosimalli;
+    }
+    ajo() {
+        console.log("Auton ajo: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    kiihdytys() {
+        console.log("Kiihdytetaan auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    jarrutus() {
+        console.log("Jarrutetaan: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    kaynnistys() {
+        console.log("Kaynnistaa auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    sammutus() {
+        console.log("Sammuttaa auton: " + this._merkki  + this._malli + this._vuosimalli);
     }
 }
-const testiAjo = new TestiAjo();
+
+class Moottoripyora extends Autoo {
+    constructor(merkki, malli, vuosimalli) {
+        super(merkki, malli, vuosimalli);
+        this._pyorat = 2;
+    }
+    get merkki() {
+        return this._merkki;
+    }
+    set merkki(uusiMerkki) {
+        this._merkki = uusiMerkki;
+    }
+    get malli() {
+        return this._malli;
+    }
+    set malli(uusiMalli) {
+        this._malli = uusiMalli;
+    }
+    get vuosimalli() {
+        return this._vuosimalli;
+    }
+    set vuosimalli(uusiVuosimalli) {
+        this._vuosimalli = uusiVuosimalli;
+    }
+    ajo() {
+        console.log("Auton ajo: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    kiihdytys() {
+        console.log("Kiihdytetaan auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    jarrutus() {
+        console.log("Jarrutetaan: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    kaynnistys() {
+        console.log("Kaynnistaa auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+    sammutus() {
+        console.log("Sammuttaa auton: " + this._merkki + this._malli + this._vuosimalli);
+    }
+}
+
+class TestiAajo {
+    constructor() {
+        const mese = new Autoo("Mercedes-Benz ", "Sarja S ", 2023);
+        const moottoripyora = new Moottoripyora("Harley-Davidson ", "Sportster ", 2022);
+
+        mese.ajo();
+        console.log(mese._pyorat)
+        moottoripyora.ajo();
+        console.log(moottoripyora._pyorat)
+    }
+}
+
+const testiAajo = new TestiAajo();
+
+
+class Pankkitili {
+    constructor() {
+        this.saldo = 0;
+    }
+
+    talleta(maara) {
+        if (maara > 0) {
+            this.saldo += maara;
+            console.log(`Talletus onnistui. Uusi saldo: ${this.saldo}Ä`);
+        } else {
+            console.log("Virhe: Talletettava maara on negatiivinen tai nolla.");
+        }
+    }
+
+    nosta(maara) {
+        if (maara > 0) {
+            if (this.saldo >= maara) {
+                this.saldo -= maara;
+                console.log(`Nosto onnistui. Uusi saldo: ${this.saldo}Ä`);
+            } else {
+                console.log("Virhe: Ei tarpeeksi saldoa nostoon.");
+            }
+        } else {
+            console.log("Virhe: Nostettava maara on negatiivinen tai nolla.");
+        }
+    }
+}
+
+
+const tili = new Pankkitili();
+
+tili.talleta(100);
+tili.nosta(50);
+tili.nosta(70);
+tili.talleta(-10);
+tili.nosta(0);
+
+class Elaiin {
+    constructor(nimi) {
+        this.nimi = nimi;
+    }
+
+    aanesta() {
+        console.log(`${this.nimi} tekee ‰‰nt‰.`);
+    }
+}
+class Dogi extends Elaiin {
+    aanesta() {
+        console.log(`${this.nimi} haukkuu: Bark Bark!`);
+    }
+}
+class Lintu extends Elaiin {
+    aanesta() {
+        console.log(`${this.nimi} laulaa: Tsirp Tsirp`);
+    }
+}
+class Kala extends Elaiin {
+    aanesta() {
+        console.log(`${this.nimi} kuplii vedessa`);
+    }
+}
+const oni = new Dogi("Oni");
+const varpunen = new Lintu("Varpunen");
+const kultakala = new Kala("Kultakala");
+
+oni.aanesta();
+varpunen.aanesta();
+kultakala.aanesta();
