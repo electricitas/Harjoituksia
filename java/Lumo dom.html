@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="dom.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <article class="kirjoitus">
+        <p id="muokattu">Muokkaa tekstiä</p>
+        <button onclick="muokkaa()">Muokkaa</button>
+    </article>
+
+    <form class="nimiä">
+            <label>Etunimi:</label><br />
+            <input type="text" name="name" value="" id="etunimi" /><br />
+            <label>Sukunimi:</label><br />
+            <input type="text" name="name" value="" id="sukunimi" /><br />
+            <button onclick="nimiTiedot()">Hae tiedot</button>
+        </form>
+
+    <article class="Pohja">
+        <p id="vaihto">Vaihtaa taustavärin</p>
+        <button onclick="taustanVaihto()">vaihda tausta</button>
+    </article>
+
+    <article class="tietoja">
+        <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">Hae tämän linkin tiedot</a>
+        <button onclick="linkinTiedot()">Hae linkin tiedot</button>
+    </article>
+
+    <table id="tauluja" border="1">
+        <tr>
+            <td>Row1 Cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        <td> <button onclick="lisaaRivi()">Lisää rivi</button></td>
+        </tr>
+    </table>
+</body>
+</html>
