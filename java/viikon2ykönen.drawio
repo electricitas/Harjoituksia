@@ -1,9 +1,77 @@
-<mxfile host="app.diagrams.net" modified="2023-11-01T10:31:40.867Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0" version="21.8.2" etag="r5ZwcLjThdtZgiQA0-pN" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-01T10:47:02.035Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="aGpm7k50iPOdGjuqkByA" version="21.8.2" type="github">
   <diagram name="Sivu-1" id="TmIAtOk3crAeCe-g3cgf">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-1" target="ah7CXlkJqXyO-MuXlfqT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-1" value="Aloitus HTML-sivu" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-2" target="ah7CXlkJqXyO-MuXlfqT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-2" value="Pyydä&#xa;käyttäjältä luku" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-3" target="ah7CXlkJqXyO-MuXlfqT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-3" value="Luo muuttuja" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-4" target="ah7CXlkJqXyO-MuXlfqT-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-4" value="Lue muuttujaan&#xa;käyttäjän luku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-8" target="ah7CXlkJqXyO-MuXlfqT-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-8" value="onko&lt;br&gt;&lt;div&gt;muuttuja&lt;/div&gt;&lt;div&gt;suurempi&lt;/div&gt;&lt;div&gt;kuin&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-10" value="Loppu" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="660" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-13" target="ah7CXlkJqXyO-MuXlfqT-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-13" value="Luku on suurin" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-14" target="ah7CXlkJqXyO-MuXlfqT-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-14" value="Luku on suurempi" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-16" value="Ei" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-17" value="Kyllä" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="314" y="440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-18" target="ah7CXlkJqXyO-MuXlfqT-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-18" value="&lt;div&gt;Luku ei ole&lt;/div&gt;&lt;div&gt;suurempi&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ah7CXlkJqXyO-MuXlfqT-19" target="ah7CXlkJqXyO-MuXlfqT-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ah7CXlkJqXyO-MuXlfqT-19" value="&lt;div&gt;Luku ei ole&lt;/div&gt;&lt;div&gt;suurempi&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
