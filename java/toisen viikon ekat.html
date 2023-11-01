@@ -9,7 +9,7 @@
     </script>
 </head>
 <body>
-    <article class='parilliset' id="eka">
+    <article class="parilliset" id="eka">
 
         <h1>Parilliset Luvut</h1>
 
@@ -23,6 +23,7 @@
     </article>
 
     <article class="salasana" id="toka">
+        <h1>Salasana syöttö</h1>
         <p>Syötä sana:</p>
         <input type="text" id="sana">
         <button onclick="muunnaSalasanaksi()">Muunna</button>
@@ -52,14 +53,56 @@
         <p id="kertoma"></p>
     </article>
 
-    <article class="muuttujaan" id="viides">
-        <h1>Kertotaulu</h1>
-
-        <label>Syötä luku:</label>
-        <input type="text" id="luku">
-        <button onclick="laskeKertotaulu()">Laske</button>
-
-        <p id="lause"></p>
+    <article class="hip" id="viides">
+        <h1>Tehtävä 5</h1>
+        <p>
+            Kirjoita ohjelma, joka tulostaa näytölle luvut 1-100, kuitenkin
+            siten, että jos luku on 3:lla jaollinen, tulostetaan hip ja
+            viidellä jaollinen tulostetaan heijaa ja jos sekä viidellä että kolmella
+            jaollinen, tulostetaan hipheijaa
+        </p>
+        <button type="button" id="button" onclick="hipHeijaa()">Tulosta</button>
+        <div id="lukujenTulostus"></div>
     </article>
+
+    <article class="ensimmäistä" id="kuudes">
+        <h1>Tehtävä 6</h1>
+        <p>Kirjoita ohjelma, joka tulostaa 10 ensimmäistä numeroa</p>
+        <button type="button" id="seiska" onclick="ekatKymmenen()">10 Ensimmäistä</button>
+        <div id="lukujenTulostus10"></div>
+    </article>
+
+    <article class="yhteen" id="seitsemäs">
+        <h1>Tehtävä 7</h1>
+        <p>Kirjoita ohjelma, joka laskee 10 ensimmäistä numeroa yhteen</p>
+        <button type="button" id="button" onclick="yhteen()">Laske 10 ens. yhteen</button>
+        <div id="lukujenTulostusY"></div>
+    </article>
+
+    <article class="potenssi" id="kahdeksas">
+        <h1>Tehtävä 8</h1>
+        <p>Kirjoita ohjelma, joka kysyy käyttäjältä kahta lukua ja laskee ensimmäisen potenssiin toinen esim. 5 ja 2 = 5<sup>2</sup> = 25</p>
+        <p>Anna korotettava luku: <input type="text" id="kor" value=""> </p>
+        <p>Anna potenssi: <input type="text" id="pot" value=""> </p>
+        <button type="button" id="button" onclick="potenssi()">Laske</button>
+        <div id="lukujenTulostusP"></div>
+    </article>
+
+    <article class="pieninjasuurin" id="yhdeksas">
+        <h1>Suurin ja pienin luku</h1>
+        <p>Syötä viisi lukua ja löydä niiden suurin ja pienin arvo.</p>
+
+        <input type="text" id="num1" placeholder="Luku 1">
+        <input type="text" id="num2" placeholder="Luku 2">
+        <input type="text" id="num3" placeholder="Luku 3">
+        <input type="text" id="num4" placeholder="Luku 4">
+        <input type="text" id="num5" placeholder="Luku 5">
+
+        <button onclick="findMinMax()">Etsi suurin ja pienin</button>
+
+        <p>Suurin luku: <span id="maxValue"></span></p>
+        <p>Pienin luku: <span id="minValue"></span></p>
+    </article>
+
 </body>
 </html>

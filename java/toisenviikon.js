@@ -16,12 +16,12 @@
 
     function muunnaSalasanaksi() {
         var syotettySana = document.getElementById("sana").value;
-        var muunnettuSalasana = '';
+        var muunnettuSalasana = "";
 
-        if (syotettySana.trim() !== '') {
+        if (syotettySana.trim() !== "") {
             for (var i = 0; i < syotettySana.length; i++) {
                 muunnettuSalasana += syotettySana[i];
-                muunnettuSalasana += 'Ö';
+                muunnettuSalasana += "Ö";
             }
         } else {
             muunnettuSalasana = "Syötä kelvollinen sana.";
@@ -32,11 +32,8 @@
 
     function tarkastaKirjain() {
         var syotettySana = document.getElementById("sanat").value;
-
         var loytyykoO = syotettySana.toLowerCase().includes("ö");
-
         var vastaus = loytyykoO ? "on" : "ei ole";
-
         document.getElementById("vastaus").textContent = "Sanassa " + syotettySana + " " + vastaus + " \"ö\"-kirjainta.";
     }
 
@@ -54,29 +51,66 @@ function laskeKertoma() {
     document.getElementById("kertoma").textContent = "Kertoma: " + kertoma;
 }
 
-    function laskeSummaJaKeskiarvo() {
-        var luku1 = parseInt(document.getElementById("luku1").value);
-        var luku2 = parseInt(document.getElementById("luku2").value);
-        var luku3 = parseInt(document.getElementById("luku3").value);
-        var luku4 = parseInt(document.getElementById("luku4").value);
-        var luku5 = parseInt(document.getElementById("luku5").value);
+function hipHeijaa() {
+    var tulostusDiv = document.getElementById("lukujenTulostus");
+    tulostusDiv.innerHTML = "";
 
-        var summa = luku1 + luku2 + luku3 + luku4 + luku5;
-        var keskiarvo = summa / 5;
-
-        var tulosElementti = document.getElementById("tulo");
-        tulosElementti.innerHTML = "Lukujen summa on: " + summa + " ja keskiarvo on: " + keskiarvo;
-    }
-
-    function laskeKertotaulu() {
-        var luku = parseInt(document.getElementById("luku").value);
-        var lause = "";
-
-        for (var i = 1; i <= 10; i++) {
-            lause += luku + "x " + i + " = " + (luku * i) + "<br>";
+    for (var i = 1; i <= 100; i++) {
+        var teksti = "";
+        if (i % 3 === 0) {
+            teksti += "hip";
+        }
+        if (i % 5 === 0) {
+            teksti += "heijaa";
+        }
+        if (teksti === "") {
+            teksti = i.toString();
         }
 
-        var lauseElementti = document.getElementById("lause");
-        lauseElementti.innerHTML = lause;
-
+        tulostusDiv.innerHTML += teksti + "<br>";
     }
+}
+
+function ekatKymmenen() {
+    var tuloste = "";
+    for (var i = 1; i <= 10; i++) {
+        tuloste += i.toString()
+    }
+    document.getElementById('lukujenTulostus10').innerHTML = tuloste;
+}
+
+function yhteen() {
+    var tulostusDiv = document.getElementById("lukujenTulostusY");
+    tulostusDiv.innerHTML = "";
+    var summa = 0;
+    for (var i = 1; i <= 10; i++) {
+        summa += i;
+    }
+    tulostusDiv.innerHTML = "Summa: " + summa;
+}
+
+function potenssi() {
+    var koro = document.getElementById("kor").value;
+    var pote = document.getElementById("pot").value;
+    yht = koro;
+    for (var p = 1; p < pote; p++) {
+        yht *= koro;
+    }
+    document.getElementById("lukujenTulostusP").innerHTML = "<p>" + yht + "</p>";
+}
+
+function findMinMax() {
+    const num1 = parseInt(document.getElementById("num1").value);
+    const num2 = parseInt(document.getElementById("num2").value);
+    const num3 = parseInt(document.getElementById("num3").value);
+    const num4 = parseInt(document.getElementById("num4").value);
+    const num5 = parseInt(document.getElementById("num5").value);
+
+    const numbers = [num1, num2, num3, num4, num5];
+
+    const max = Math.max(...numbers);
+    const min = Math.min(...numbers);
+
+    document.getElementById("maxValue").textContent = max;
+    document.getElementById("minValue").textContent = min;
+}
