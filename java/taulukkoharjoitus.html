@@ -1,0 +1,52 @@
+﻿﻿
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Taulukko</title>
+    <link rel="stylesheet" href="css/taulukko.css">
+    <script type="text/javascript" src="taulukko.js">
+
+    </script>
+</head>
+<body>
+    <article class="järjestys" id="ykonen">
+        <div class="container">
+            <form class="" action="index.html" method="post">
+                <p>Anna etunimesi: <input type="text" id="etu" value=""></p>
+                <p>Anna sukunimesi: <input type="text" id="suku" value=""></p>
+            </form>
+        </div>
+    </article>
+
+    <article class="kouluun" id="kakonen">
+        <h1>Tulin tänään kouluun:</h1>
+        <form>
+            <label for="jalka">1. Jalan</label>
+            <input type="radio" id="jalka" name="kulkuvalinta" value="jalka">
+
+            <label for="auto">2. Autolla</label>
+            <input type="radio" id="auto" name="kulkuvalinta" value="auto">
+
+            <label for="juna">3. Junalla</label>
+            <input type="radio" id="juna" name="kulkuvalinta" value="juna">
+
+            <label for="bussi">4. Bussilla</label>
+            <input type="radio" id="bussi" name="kulkuvalinta" value="bussi">
+
+            <label for="mopo">5. Mopolla</label>
+            <input type="radio" id="mopo" name="kulkuvalinta" value="mopo">
+
+            <label for="uiminen">6. Uiden</label>
+            <input type="radio" id="uiminen" name="kulkuvalinta" value="uiminen">
+        </form>
+    </article>
+
+    <article class="lempitunti" id="kolmonen">
+        <h1>Lempituntini koulussa on:</h1>
+        <label for="Lempiaine">Valitse lempiaineesi</label>
+        <select id="tunti" name="lempiaine">
+            <option value="Matikka">Matematiikka</option>
+        </select>
+    </article>
+</body>
+</html>
