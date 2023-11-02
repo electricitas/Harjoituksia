@@ -1,5 +1,4 @@
-﻿﻿
-<html lang="en" dir="ltr">
+﻿<html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title>Taulukko</title>
@@ -21,23 +20,33 @@
     <article class="kouluun" id="kakonen">
         <h1>Tulin tänään kouluun:</h1>
         <form>
-            <label for="jalka">1. Jalan</label>
-            <input type="radio" id="jalka" name="kulkuvalinta" value="jalka">
+            <div class="radio-option">
+                <input type="radio" id="jalka" name="kulkuvalinta" value="jalka">
+                <label for="jalka">1. Jalan</label>
+            </div>
 
-            <label for="auto">2. Autolla</label>
-            <input type="radio" id="auto" name="kulkuvalinta" value="auto">
+            <div class="radio-option">
+                <input type="radio" id="auto" name="kulkuvalinta" value="auto">
+                <label for="auto">2. Autolla</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="juna" name="kulkuvalinta" value="juna">
+                <label for="juna">3. Junalla</label>
+            </div>
 
-            <label for="juna">3. Junalla</label>
-            <input type="radio" id="juna" name="kulkuvalinta" value="juna">
+            <div class="radio-option">
+                <input type="radio" id="bussi" name="kulkuvalinta" value="bussi">
+                <label for="bussi">4. Bussillalla</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="mopo" name="kulkuvalinta" value="mopo">
+                <label for="mopo">5. Mopolla</label>
+            </div>
 
-            <label for="bussi">4. Bussilla</label>
-            <input type="radio" id="bussi" name="kulkuvalinta" value="bussi">
-
-            <label for="mopo">5. Mopolla</label>
-            <input type="radio" id="mopo" name="kulkuvalinta" value="mopo">
-
-            <label for="uiminen">6. Uiden</label>
-            <input type="radio" id="uiminen" name="kulkuvalinta" value="uiminen">
+            <div class="radio-option">
+                <input type="radio" id="uiminen" name="kulkuvalinta" value="uiminen">
+                <label for="uiminen">6. Uimalla</label>
+            </div>
         </form>
     </article>
 
@@ -46,7 +55,12 @@
         <label for="Lempiaine">Valitse lempiaineesi</label>
         <select id="tunti" name="lempiaine">
             <option value="Matikka">Matematiikka</option>
+            <option value="Kemia">Kemia</option>
+            <option value="Äidinkieli">Äikkä</option>
+            <option value="Liikunta">Liikka</option>
         </select>
+        <button onclick="naytaTiedot()">Lähetä</button>
+        <div id="naytetytTiedot"></div>
     </article>
 </body>
 </html>

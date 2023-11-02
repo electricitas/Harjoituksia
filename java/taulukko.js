@@ -1,22 +1,18 @@
-﻿const lahetaNappi = document.getElementById("lahetaNappi");
+function naytaTiedot() {
+    const etunimi = document.getElementById('etu').value;
+    const sukunimi = document.getElementById('suku').value;
+    const kulkuvalinta = document.querySelector('input[name="kulkuvalinta"]:checked');
+    const lempiaine = document.getElementById('tunti').value;
 
-lahetaNappi.addEventListener("click", function () {
-    const etunimi = document.getElementById("etu").value;
-    const sukunimi = document.getElementById("suku").value;
+    let naytettavatTiedot = "Etunimi: " + etunimi + "<br>";
+    naytettavatTiedot += "Sukunimi: " + sukunimi + "<br>";
 
-    console.log("Etunimi: " + etunimi);
-    console.log("Sukunimi: " + sukunimi);
-});
-
-const form = document.querySelector(".kouluun form");
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const selectedOption = document.querySelector("input[name='kulkuvalinta']:checked");
-    if (selectedOption) {
-        const selectedValue = selectedOption.value;
-        console.log("Valitsit kulkuvalinnaksi: " + selectedValue);
-    } else {
-        console.log("Valitse kulkuvalinta ennen kuin jatkat.");
+    if (kulkuvalinta) {
+        naytettavatTiedot += "Kulku kouluun: " + kulkuvalinta.value + "<br>";
     }
-});
+
+    naytettavatTiedot += "Lempitunti koulussa: " + lempiaine;
+
+    const naytetytTiedotElement = document.getElementById('naytetytTiedot');
+    naytetytTiedotElement.innerHTML = naytettavatTiedot;
+}
