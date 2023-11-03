@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2023-11-03T08:05:59.031Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="VUNDyS_NJCNi5n-P_zUb" version="22.0.8" type="github">
+  <diagram name="Sivu-1" id="jNaYSMbeP0Z_qt4pjJCi">
+    <mxGraphModel dx="906" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fHiISs76fz-oC04-sptV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-1" target="fHiISs76fz-oC04-sptV-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-1" value="Aloitus HTML-sivu" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-2" target="fHiISs76fz-oC04-sptV-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-2" value="&lt;div&gt;Pyydä käyttäjältä&lt;/div&gt;&lt;div&gt;salasana&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-3" target="fHiISs76fz-oC04-sptV-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-3" value="Luo muuttuja" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-4" target="fHiISs76fz-oC04-sptV-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-4" value="&lt;div&gt;Lue muuttujaan&lt;/div&gt;&lt;div&gt;käyttäjän valinta&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-5" target="fHiISs76fz-oC04-sptV-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-5" value="&lt;div&gt;Syötä&lt;/div&gt;&lt;div&gt;salasana&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="374" y="410" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-7" target="fHiISs76fz-oC04-sptV-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-7" value="&lt;div&gt;Tulostaa&lt;/div&gt;&lt;div&gt;salasanan niin,&lt;/div&gt;&lt;div&gt;että jokatoinen&lt;/div&gt;&lt;div&gt;kirjain on Ö&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-8" value="The End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="620" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
