@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2023-11-03T08:44:35.539Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="SbyCmAd0-p3nqz-w8svN" version="22.0.8" type="github">
+  <diagram name="Sivu-1" id="jNaYSMbeP0Z_qt4pjJCi">
+    <mxGraphModel dx="906" dy="725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fHiISs76fz-oC04-sptV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-1" target="fHiISs76fz-oC04-sptV-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-1" value="Aloitus HTML-sivu" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-2" target="fHiISs76fz-oC04-sptV-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-2" value="&lt;div&gt;Pyydä käyttäjältä salasana&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-3" target="fHiISs76fz-oC04-sptV-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-3" value="Luo muuttuja" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-4" target="fHiISs76fz-oC04-sptV-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-4" value="&lt;div&gt;Lue muuttujaan&lt;/div&gt;&lt;div&gt;käyttäjän valinta&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-5" target="fHiISs76fz-oC04-sptV-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmFNih_TY_qP6DySXYq4-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fHiISs76fz-oC04-sptV-5" target="RmFNih_TY_qP6DySXYq4-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-5" value="Syötä salasana" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="361" y="310" width="106" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fHiISs76fz-oC04-sptV-7" target="fHiISs76fz-oC04-sptV-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-7" value="Tulostaa annetun salasanan satunnaisesti generoitujen kirjainten kanssa." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="341" y="600" width="146" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fHiISs76fz-oC04-sptV-8" value="The End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="690" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RmFNih_TY_qP6DySXYq4-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="RmFNih_TY_qP6DySXYq4-1" target="RmFNih_TY_qP6DySXYq4-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RmFNih_TY_qP6DySXYq4-1" value="Muuttaa annetun salasanan niin, että ohjelma arpoo jokaisen kiraimen perään satunnaisen kirjaimen" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="308.75" width="240" height="112.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RmFNih_TY_qP6DySXYq4-5" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+          <mxGeometry x="467" y="625" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RmFNih_TY_qP6DySXYq4-7" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+          <mxGeometry x="341" y="625" width="20" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
