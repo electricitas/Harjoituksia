@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Lokaali varasto</title>
+    <link rel="stylesheet" href="css/varasto.css">
+    <script src="varasto.js"></script>
+</head>
+<body>
+    <h2 id="otsikko">Paikallinen varasto - javascipt</h2>
+    <fieldset>
+        <input type="text" id="syottoAvain" placeholder="Syota avain" />
+        <input type="text" id="syottoArvo" placeholder="Syota arvo" />
+        <p></p>
+        <button type="button" id="syottoBtn" onclick="syota()">syota tieto</button>
+        <button type="button" id="lueBtn" onclick="listaa()">Lue tiedot</button>
+    </fieldset>
+    <fieldset>
+        <legend>Paikallinen varasto</legend>
+        <div id="pvSyotto"></div>
+    </fieldset>
+</body>
+</html>
