@@ -14,5 +14,41 @@
     <h2>Kaupunki tietoutta</h2>
     <button onclick="getInfo()" class="apeja">Ref</button>
     <div id="maa"></div>
+
+    <h2>Sääsovellus</h2>
+    <label for="kaupunki">Kaupunki:</label>
+    <input type="text" id="kaupunki"><br />
+    <button onclick="hankiSaato()" class="apeja">Hanki sää</button>
+    <div id="saatoTulos"></div>
+
+    <h2>Rakkauslaskuri</h2>
+    <label for="miehenNimi">Miehen nimi:</label>
+    <input type="text" id="miehenNimi" placeholder="Syötä miehen nimi"><br />
+
+    <label for="naisenNimi">Naisen nimi:</label>
+    <input type="text" id="naisenNimi" placeholder="Syötä naisen nimi"><br />
+
+    <button onclick="hankiRakkausprosentti()" class="apeja">Hanki rakkausprosentti</button>
+
+    <div id="rakkausTulos"></div>
+
+    <h2>Elokuvien ja TV-sarjojen haku</h2>
+
+    <label for="aloitusvuosi">Aloitusvuosi:</label>
+    <input type="text" id="aloitusvuosi" placeholder="Syötä aloitusvuosi"><br />
+
+    <label for="lopetusvuosi">Lopetusvuosi:</label>
+    <input type="text" id="lopetusvuosi" placeholder="Syötä lopetusvuosi"><br />
+
+    <label for="kieli">Kieli:</label>
+    <input type="text" id="kieli" placeholder="Syötä kieli"><br />
+
+    <label for="tyyppi">Tyyppi:</label>
+    <input type="text" id="tyyppi" placeholder="Syötä tyyppi"><br />
+
+    <button onclick="haeElokuvat()" class="apeja">Leffat</button><br />
+    <button onclick="haeSarjat()" class="apeja">Sarjat</button>
+
+    <div id="tulokset"></div>
 </body>
 </html>
