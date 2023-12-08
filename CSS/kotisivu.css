@@ -5,7 +5,7 @@
 
 header {
     height: 100px;
-    background: #EFCFE3;
+    background: black;
 }
 
 h1 {
@@ -28,12 +28,12 @@ nav {
         float: left;
         list-style-type: none;
         padding: 0 10px;
-        color: #0E760E;
+        color: red;
     }
 
 section {
     width: 800px;
-    background: #B4654A;
+    background: #993955;
     margin-top: -20px;
 }
 
@@ -54,7 +54,7 @@ article {
 aside {
     width: 200px;
     height: 502px;
-    background: #B89E97;
+    background: black;
     float: right;
     margin-top: -1px;
 }
@@ -66,7 +66,7 @@ h3 {
 
 aside article {
     width: 200px;
-    background: #52414C;
+    background: black;
     color: #E3655B;
 }
 
